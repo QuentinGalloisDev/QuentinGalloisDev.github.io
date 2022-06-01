@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>OhMyFood</title>
+            <meta charset="utf-8">
+            <script src="https://kit.fontawesome.com/1a6641ec0a.js" crossorigin="anonymous"></script> 
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/style.css">    
+        </head>
+        <body>
+            <header>
+                <img src="images/logo/ohmyfood@2x.svg" alt="le logo d'ohmyfood">
+            </header>
+            <main>
+                <form id="topbar">
+                    <div id="place">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Paris, Belleville">
+                    </div>
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <button>Explorer nos restaurants</button>
+                </form>
+                    <ul>
+                        <li><h2>Fonctionnement</h2></li>
+                        <li> <i class="fa-solid fa-1"></i> <i class="fa-solid fa-mobile-button"></i>Choisissez un restaurant</li>
+                        <li> <i class="fa-solid fa-2"></i> <i class="fa-solid fa-list"></i>Composez votre menu </li>
+                        <li><i class="fa-solid fa-3"></i> <i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                    </ul>
+                    <div class="container">
+                    <section>
+                        <h2>Restaurants</h2>
+                        <div class="cards_restos">                            
+                                <span href="#" class="material-icons first">  
+                                    favorite_border
+                                </span>
+                            <span class="material-icons second">
+                                    favorite
+                            </span> 
+                            <a href="palette_du_gout/palette_du_gout.html">
+                                <div>
+                                    <img src="images/restaurants/palette_du_gout.jpg" alt="Une table en bois qur laquelle est posé une assiette, une corbeille àpain et des couverts"><!-- Entrer une description du plat dans l'attribut alt -->
+                                    <b>Nouveau</b>
+                                    <h3>La palette du goût</h3>
+                                    <em>Ménilmontant</em> 
+                                </div>                          
+                             </a>
+                       </div> 
+                       <div class="cards_restos">       
+                            <span class="material-icons">
+                                    favorite_border
+                            </span>
+                            <span class="material-icons">
+                                    favorite
+                            </span>               
+                            <a href="la_note_enchantee/la_note_enchantee.html">                    
+                                <div>
+                                    <img src="images/restaurants/note_enchantée.jpg" alt="Une table vitrifié sur laquelle i y à une assiette, un menu et un verre à pied"><!-- Entrer une description du plat dans l'attribut alt -->
+                                    <b>Nouveau</b>                            
+                                    <h3>La note enchantée</h3>
+                                    <em>Charonne</em>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cards_restos">
+                            <span for="checkfav_3" class="material-icons">
+                                    favorite_border
+                            </span>
+                            <span for="checkfav_3" class="material-icons">
+                                    favorite
+                            </span>
+                            <a href="a_la_francaise/a_la_francaise.html">  
+                                <div>                 
+                                    <img src="images/restaurants/a_la_francaise.jpg" alt="Une table couverte d'une nappe blanche, sur laquelle une assiette est posé"> <!-- Entrer une description du plat dans l'attribut alt -->
+                                    <h3>À la Française</h3>
+                                    <em>Cité Rouge</em>
+                                </div>                                
+                            </a>    
+                        </div> 
+                        <div class="cards_restos">
+                            <span for="checkfav_4" class="material-icons">
+                                    favorite_border
+                            </span>
+                            <span for="checkfav_4" class="material-icons">
+                                    favorite
+                            </span>
+                            <a href="delice_des_sens/delice_des_sens.html">
+                                <div>
+                                    <img src="images/restaurants/delice_des_sens.jpg" alt="Une table en bois sur laquelle est posé une assiette plate carrée "><!-- Entrer une description du plat dans l'attribut alt -->
+                                    <h3>Le délice des sens</h3>
+                                    <em>Folie-Méricourt</em>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>  
+            </main>
+                <footer>
+                    <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">ohmyfood</a></li>
+                            <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+                            <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </footer>
+        </body>
+    </html>
