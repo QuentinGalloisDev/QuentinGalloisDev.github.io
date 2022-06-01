@@ -500,11 +500,6 @@ footer li:nth-of-type(3) i
             margin-left: -23px;
       }
 
-      .container
-      {
-            flex-direction: row;
-      }
-
       section 
       {
             width: 100%;
