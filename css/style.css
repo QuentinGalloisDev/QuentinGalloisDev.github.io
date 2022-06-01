@@ -1,0 +1,555 @@
+/*Global*/
+*
+ {
+    box-sizing: border-box; 
+ }
+
+ html 
+ {
+      font-size: 62.5%;
+ }   
+
+body
+{
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+      line-height: 2;
+      margin: 0;
+      color: #000000;
+}
+
+img
+{
+      max-width: 100%;
+      height: auto;
+}
+
+a
+{
+      color: #000000;
+      text-decoration: none;
+}
+
+i
+{
+      color: #808080;
+}
+
+ul 
+{
+      list-style-type: none;
+      padding: 0;
+}
+
+/*Global*/
+
+
+
+.container
+{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: #f6f6f6;
+}
+
+header
+{
+      display: flex;
+      width: 100%;
+      justify-content:center;
+      padding: 20px;
+}
+#topbar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+#place
+{
+      background-color: #eaeaea;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+}
+#place i
+{
+    align-self: center;
+    padding: 0px 5px ;
+    font-size: 20px;
+    color: #000000;
+}
+#place input
+{
+      width: 160px;
+      font-size: 18px;
+      background-color: #eaeaea;
+      border: none;
+      
+}
+
+h1
+{
+      padding: 0px 100px;
+      text-align: center;
+      margin-bottom: 0;
+      line-height: 1.2;
+}
+
+#topbar p
+{
+      font-size: 22px;
+      padding: 0px 64px;
+      text-align: center;
+}
+
+#topbar button /* Boutton Explorer nos restaurants */
+{
+      padding: 15px;
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
+      background: rgb(225,99,233);
+      background: linear-gradient(180deg, rgba(225,99,233,1) 0%, rgba(187,59,195,1) 60%, rgba(159,61,166,1) 100%);
+      color: #eaeaea;
+      font-size: 20px;
+      margin-bottom: 40px;
+      box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2)
+}
+
+#topbar button:hover
+{
+      background: rgb(225,99,233);
+      background: linear-gradient(180deg, rgba(225,99,233,1) 0%, rgba(187,59,195,1) 100%);
+      box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.2)
+}
+
+ul
+{
+      padding: 20px;
+}
+
+main ul li:nth-child(1n+2) /* Les trois li de la liste de fonctionnement */
+{
+      
+      background-color: #f6f6f6;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow:2px 2px 10px 2px rgba(0,0,0,0.1) ;
+}
+
+main ul li:nth-child(1n+2):hover
+{
+      background-color: #f5edff;
+}
+
+main ul li:nth-child(1n+2) i:nth-of-type(1) /* les trois chiffres avec un cercle en fond du fonctonnement */
+{
+      background-color: #9356dc;
+      color: #ffffff;
+      position: relative;
+      margin-left:-27px ;
+      border-radius: 50%;
+      
+}
+.fa-1
+{
+      padding: 12px 15px;
+}
+.fa-2, .fa-3
+{
+      padding: 12px 13px;
+}
+
+main ul li:nth-child(1n+2) i:nth-of-type(2) /* Les icônes dans le fonctionnement */
+{
+      font-size: 25px;
+      padding: 0px 23px;
+}
+
+main ul li:nth-child(1n+2):hover i:nth-of-type(2)
+{
+      color: #9356dc;
+}
+
+section
+{
+      background-color: #f6f6f6;
+      
+}
+
+.cards_restos
+{
+      border-radius: 25px;
+      position: relative;
+      margin-bottom: 23px;
+      padding-bottom: 10px;
+      background-color: #ffffff;
+}
+
+.cards_restos:hover 
+{
+      zoom: 1.1;
+      box-shadow:2px 2px 10px 2px rgba(0,0,0,0.1) ;
+}
+
+.cards_restos img
+{
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+      display: block;
+}
+
+.cards_restos b
+{
+      background-color: #99e2d0;
+      color: #088c6b;
+      padding: 12px;
+      border-radius: 5px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+}
+
+.cards_restos h3
+{
+      margin: 0;
+      padding-top: 10px;
+      padding-left: 25px;
+}
+
+.cards_restos em
+{
+      font-style: normal;
+      font-size: 20px;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      line-height: 1;
+}
+
+.material-icons:nth-of-type(1), .material-icons:nth-of-type(2) /* Les deux coeurs superposés des restaurants */
+{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 45px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+}
+
+.material-icons:nth-of-type(1) /* Le coeur avec une bordure noir */
+{
+      z-index: 2;
+}
+
+.material-icons:nth-of-type(2) /* Le coeur avec un dégradé */ 
+{
+      background: -webkit-gradient(linear, left bottom, right top, from(#e163e9), to(#9356dc));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+      z-index: 1;
+}
+
+.material-icons:nth-of-type(1):hover
+{
+      opacity:0;
+}
+
+footer .container
+{
+      background-color: #353535;
+}
+
+footer li:first-of-type a
+{
+      font-family: "shrikhand";
+      font-size: 24px;
+}
+
+footer li a, footer li i
+{
+      color: #ffffff;
+}
+footer li:nth-of-type(2) i
+{
+      padding-right: 15px;
+}
+
+footer li:nth-of-type(3) i
+{
+      padding-right: 9px;
+}
+
+/*Style des restaurants*/
+
+.container_restos h1
+{
+      font-size: 45px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      font-family: "shrikhand", sans-serif;
+      margin-bottom: 25px;
+}
+
+.container_restos h1 span
+{
+      font-weight: normal;
+      font-size: 40px;
+      padding-right: 15px;
+      align-self: center;
+}
+
+.container_restos, header
+{
+      padding: 20px;
+}
+
+header
+{
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+}
+header nav
+{  
+      position: absolute;
+      top: 26px;
+      left: 33px;
+      font-size: 25px;
+      
+}
+
+nav i
+{
+      color: #353535;
+      
+}
+
+.topbar
+{
+      align-self: center;
+}
+
+main img
+{
+      width: 100%;
+}
+main, main .container_restos
+{
+      background-color: #f6f6f6;
+}
+
+main .container_restos
+{
+      
+      border-radius: 50px 50px 0px 0px;
+      position: relative;
+      margin-top: -70px;
+      margin-left: 0px;
+}
+fieldset
+{
+      border: none;
+      margin: 0;
+      padding: 0;
+}
+
+legend
+{
+      padding: 0;
+      font-size: 25px;
+      border-bottom: 4px solid #99e2d0;/* Bordure à moitié*/
+}
+
+.cards
+{
+      border-radius: 22px;
+      background-color: #ffffff;
+      margin: 10px 0px;
+      padding: 14px;
+}
+
+.container_restos input[type="checkbox"]
+{
+      position: absolute;
+      left: -9999px;
+}
+
+.fa-circle-check
+{
+     background-color: #99E2D0;
+     color: #ffffff;
+     display: none;
+}
+
+.cards:hover .fa-circle-check
+{
+      display: block;
+}
+
+h3
+{
+      margin: 0;
+}
+
+.detail
+{
+      display: flex;
+      justify-content: space-between;
+}
+
+.detail em 
+{
+      font-style: normal;
+}
+
+form
+{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+}
+
+button
+{
+      align-self: center;
+      padding: 15px 45px;
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
+      background: rgb(225,99,233);
+      background: linear-gradient(to bottom, #e26fda 0%, #9f5adc 100%);
+      color: #eaeaea;
+      font-size: 20px;
+      margin: 40px 0;
+      box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2)
+}
+
+button:hover
+{
+      background: rgb(225,99,233);
+      background: linear-gradient(180deg, rgba(225,99,233,1) 0%, rgba(187,59,195,1) 100%);
+      box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.2)
+}
+
+
+footer .container
+{
+      background-color: #353535;
+}
+
+footer li:first-of-type a
+{
+      font-family: "shrikhand";
+      font-size: 24px;
+}
+
+footer li a, footer li i
+{
+      color: #ffffff;
+}
+footer li:nth-of-type(2) i
+{
+      padding-right: 15px;
+}
+
+footer li:nth-of-type(3) i
+{
+      padding-right: 9px;
+}
+
+@media all and (min-width: 768px) /*Media queries page d'accueil*/
+{
+      main ul 
+      {
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+      }
+      main ul li:first-of-type 
+      {
+            width: 100%;
+            text-align: center;
+      }
+      main ul li:nth-of-type(1n+2)
+      {
+            text-align: center;
+            width: 30%;
+            padding-left: 10px;
+      }
+      main ul li:nth-child(1n+2) i:nth-of-type(2)
+      {
+            padding-right: 5px;
+            padding-left: 0px;
+      }
+      main ul li:nth-child(3) i:nth-of-type(1)
+      {
+            margin-left: -15px;
+      }
+      main ul li:nth-child(4) i:nth-of-type(1)
+      {
+            margin-left: -23px;
+      }
+
+      .container
+      {
+            flex-direction: row;
+      }
+
+      section 
+      {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+      }
+      section h2
+      {
+            width: 100%;
+      }
+
+      .cards_restos
+      {
+           
+            width: 45%;
+      }
+
+      /* Media queries pour les pages restaurants */
+
+   
+
+      form fieldset
+      {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      }
+
+      form fieldset label 
+      {
+            width: 32%;
+      }
+
+      form fieldset label .cards
+      {
+            width: 90%;
+            height: fit-content;
+            padding: 10px;
+            margin: 8px;
+            line-height: 1.4;
+      }
+
+      .detail
+      {
+            align-items: flex-end;
+      }
+}
