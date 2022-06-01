@@ -1,0 +1,184 @@
+/*Global*/
+*
+ {
+    box-sizing: border-box; 
+ }
+
+ html 
+ {
+      font-size: 62.5%;
+ }   
+
+body
+{
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8rem;
+      line-height: 2;
+      margin: 0;
+      color: #000000;
+}
+
+img
+{
+      max-width: 100%;
+      height: auto;
+}
+
+a
+{
+      color: #000000;
+      text-decoration: none;
+}
+
+i
+{
+      color: #808080;
+}
+
+h1
+{
+    font-family: "shrikhand", sans-serif;
+}
+
+ul 
+{
+      list-style-type: none;
+      padding: 0;
+}
+
+/*Global*/
+
+.container_restos, header
+{
+      padding: 20px;
+}
+
+header
+{
+      display: flex;
+      justify-content: center;
+}
+header nav
+{  
+      position: absolute;
+      top: 12px;
+      left: 33px;
+      font-size: 25px;
+      
+}
+
+nav i
+{
+      color: #353535;
+      
+}
+
+.topbar
+{
+      align-self: center;
+}
+
+main img
+{
+      width: 100%;
+}
+main, main .container_restos
+{
+      background-color: #f6f6f6;
+}
+
+main .container_restos
+{
+      
+      border-radius: 50px 50px 0px 0px;
+      position: relative;
+      top: -70px;
+      left: 0px;
+}
+fieldset
+{
+      border: none;
+      margin: 0;
+      padding: 0;
+}
+
+legend
+{
+      padding: 0;
+      font-size: 25px;
+      border-bottom: 4px solid #99e2d0;/* Bordure à moitié*/
+}
+
+.cards
+{
+      border-radius: 22px;
+      background-color: #ffffff;
+      margin: 10px 0px;
+      padding: 14px;
+}
+
+h3
+{
+      margin: 0;
+}
+
+input
+{
+      position:absolute;
+      left: -9999px;
+} 
+
+.detail
+{
+      display: flex;
+      justify-content: space-between;
+}
+
+form
+{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+}
+
+button
+{
+      align-self: center;
+      padding: 15px 45px;
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
+      background: rgb(225,99,233);
+      background: linear-gradient(to bottom, #e26fda 0%, #9f5adc 100%);
+      color: #eaeaea;
+      font-size: 20px;
+      margin: 40px 0;
+      box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2)
+}
+
+footer .container
+{
+      background-color: #353535;
+}
+
+footer li:first-of-type a
+{
+      font-family: "shrikhand";
+      font-size: 24px;
+}
+
+footer li a, footer li i
+{
+      color: #ffffff;
+}
+footer li:nth-of-type(2) i
+{
+      padding-right: 15px;
+}
+
+footer li:nth-of-type(3) i
+{
+      padding-right: 9px;
+}
