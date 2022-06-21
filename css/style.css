@@ -322,14 +322,12 @@ header nav
       position: absolute;
       top: 26px;
       left: 33px;
-      font-size: 25px;
-      
+      font-size: 25px;   
 }
 
 nav i
 {
       color: #353535;
-      
 }
 
 .topbar
@@ -341,6 +339,7 @@ main img
 {
       width: 100%;
 }
+
 main, main .container_restos
 {
       background-color: #f6f6f6;
@@ -354,6 +353,7 @@ main .container_restos
       margin-top: -70px;
       margin-left: 0px;
 }
+
 fieldset
 {
       border: none;
@@ -370,10 +370,14 @@ legend
 
 .cards
 {
+      display: flex;
+      height: 125px;
+      flex-direction: column;
+      justify-content: space-between;
       border-radius: 22px;
       background-color: #ffffff;
       margin: 10px 0px;
-      padding: 14px;
+      padding: 14px 0px 0px 14px;
 }
 
 .container_restos input[type="checkbox"]
@@ -386,12 +390,24 @@ legend
 {
      background-color: #99E2D0;
      color: #ffffff;
-     display: none;
+      visibility: hidden; 
+     position: relative;
+     margin-top: -55px;
+     height: 123px;
+     width: 20%;
+     display: flex;
+     border-radius: 0 22px 22px 0px;
+     align-items: center;
+     justify-content: space-around;
 }
 
 .cards:hover .fa-circle-check
 {
-      display: block;
+      visibility: visible;
+}
+.plat:first-of-type h3
+{
+      font-size: 19px;
 }
 
 h3
@@ -399,10 +415,12 @@ h3
       margin: 0;
 }
 
+
 .detail
 {
       display: flex;
       justify-content: space-between;
+      
 }
 
 .detail em 
@@ -410,13 +428,18 @@ h3
       font-style: normal;
 }
 
+.detail strong
+{
+      padding: 0px 5px;
+      
+}
+
 form
 {
       
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      
+      justify-content: center; 
 }
 
 button
@@ -440,7 +463,6 @@ button:hover
       background: linear-gradient(180deg, rgba(225,99,233,1) 0%, rgba(187,59,195,1) 100%);
       box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.2)
 }
-
 
 footer .container
 {
@@ -514,14 +536,37 @@ footer li:nth-of-type(3) i
 
       .cards_restos
       {
-           
             width: 45%;
       }
 
       /* Media queries pour les pages restaurants */
 
-   
+      .top_pict img
+      {
+            height: 450px;
+            object-fit: cover;         
+      }    
 
+      form fieldset label 
+      {
+            width: 30%;
+      }
+
+      .detail
+      {
+            align-items: flex-end;
+      }
+ 
+      
+}
+
+@media all and (min-width: 992px)
+{
+      .top_pict img
+      {
+            height: 600px;
+            object-fit: cover;         
+      }
       form fieldset
       {
             display: flex;
@@ -529,22 +574,24 @@ footer li:nth-of-type(3) i
             justify-content: space-around;
       }
 
-      form fieldset label 
+      .cards
       {
-            width: 32%;
+            height: 100%;
       }
 
-      form fieldset label .cards
+      .fa-circle-check
       {
-            width: 90%;
-            height: fit-content;
-            padding: 10px;
-            margin: 8px;
-            line-height: 1.4;
+            padding: 74px 10px;
+          
+            margin-top: -77px;
       }
 
-      .detail
+      .entree:nth-of-type(2) h3
       {
-            align-items: flex-end;
+            font-size: 18px;
+      }
+      .plat:first-of-type h3
+      {
+            font-size: 17px;
       }
 }
