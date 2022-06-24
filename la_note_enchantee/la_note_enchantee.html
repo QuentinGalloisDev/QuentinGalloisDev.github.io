@@ -9,121 +9,181 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="style.css">    
+            <link rel="stylesheet" href="../css/style_2.css">    
         </head>
         <body>
-            <header><nav><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></nav><img src="../images/logo/ohmyfood@2x.svg" alt="le logo d'ohmyfood">
+            
+            <header><nav><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></nav>
+                <div class="topbar"><img src="../images/logo/ohmyfood@2x.svg" alt="le logo d'ohmyfood"></div>
             </header>
-            <main>
-                <img src="../images/restaurants/note_enchantée.jpg" alt=""> <!-- Entrer une description du plat dans l'attribut alt -->
-                <h1>La note enchantée</h1>
-                <span class="material-symbols-outlined">
+            <main>  
+                <div class="top_pict">
+                    <img src="../images/restaurants/note_enchantee.jpg" alt="Une assiette rectangulaire sur une table en bois"> <!-- Entrer une description du plat dans l'attribut alt -->
+                </div>
+                </div> 
+                <div class="container container_restos">
+                <h1>La note enchantée
+                    <span class="material-symbols-outlined">
                     favorite
-                </span>
+                    </span>
+                </h1>
                 <form>
                 <fieldset>
                     <legend>Entrées</legend>
-                    <div class="cards">       
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Ravioles de foie gras </h3>
-                            <em>Accompagnés de leur crème à la truffe</em>
-                            <strong>25€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Caviar osciètre  </h3>
-                            <em>Sur blini à la farine de blé noir</em>
-                            <strong>35€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Homard et espuma de potiron </h3>
-                            <em>Mariné aux zestes d'orange</em>
-                            <strong>20€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Foie gras de canard cuit entier</h3>
-                            <em>Confiture de figue et pain toasté</em>
-                            <strong>35€</strong>
-                        </label>
-                    </div>
+
+                    <label class="entree">
+                        <div class="cards">
+                            <input type="checkbox" class="entree">
+                            <div class="mets">
+                                <h3>Ravioles de foie gras</h3>
+                                <em>Accompagnés de leur crème à la truffe</em>
+                            </div>            
+                            <div class="prix"> 
+                                <b>25€</b>
+                            </div>
+                            <i class="fa-solid fa-circle-check"></i>                    
+                        </div>
+                   </label>
+                        <label class="entree">
+                            <div class="cards">  
+                                <input type="checkbox" class="entree">
+                                <div class="mets">
+                                    <h3>Caviar osciètre </h3>
+                                    <em>Sur blini à la farine de blé noir</em>
+                                </div>     
+                                <div class="prix">
+                                    <b>35€</b> 
+                                </div>
+                                <i class="fa-solid fa-circle-check"></i>   
+                            </div>                    
+                    </label>
+                    <label class="entree">
+                        <div class="cards">
+                            <input type="checkbox"  class="entree">
+                            <div class="mets">
+                                <h3>Homard et espuma de potiron</h3>
+                                <em>Mariné aux zestes d'orange</em>
+                            </div>
+                            <div class="prix">
+                                <b>20€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div> 
+                    </label>
+                    <label class="entree">
+                        <div class="cards">
+                            <input type="checkbox"  class="entree">
+                            <div class="mets">
+                                <h3>Foie gras de canard cuit entier</h3>
+                                <em>Confiture de figue et pain toasté</em>
+                            </div>
+                            <div class="prix">
+                                <b>35€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div> 
+                    </label>
                 </fieldset>
                 <fieldset>
                     <legend>Plats</legend>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Noix de coquilles Saint-Jacques</h3>
-                            <em>Sur lit de purée de céleri-rave</em>
-                            <strong>40€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Langoustine poêlée</h3>
-                            <em>Purée de patate douce</em>
-                            <strong>35€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Mijoté de queue de boeuf </h3>
-                            <em>Et riz sauvage aux zestes de citron</em>
-                            <strong>44€</strong>
-                        </label>
-                    </div>
+                         <label class="plat">
+                            <div class="cards">  
+                                <input type="checkbox" class="plat">
+                                <div class="mets">
+                                    <h3>Noix de coquilles Saint-Jacques</h3>
+                                    <em>Sur lit de purée de céleri-rave</em>
+                                </div>
+                                <div class="prix">    
+                                    <b>40€</b>
+                                </div>    
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>  
+                    </label>
+                    <label class="plat">
+                        <div class="cards"> 
+                            <input type="checkbox" class="plat">
+                            <div class="mets">
+                                <h3>Langoustine poêlée</h3>
+                                <em>Purée de patate douce</em>
+                            </div>
+                            <div class="prix">
+                                <b>35€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                   </label>
+                     <label class="plat">                      
+                       <div class="cards">
+                            <input type="checkbox" class="plat">
+                            <div class="mets">
+                                <h3>Mijoté de queue de boeuf</h3>
+                                <em>Et riz sauvage aux zestes de citron</em>
+                            </div>
+                            <div class="prix">
+                                <b>44€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </fieldset>
                 <fieldset>
                     <legend>Desserts</legend>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Macaron noisette et chocolat </h3>
-                            <em>Glace au caramel brun et sel de Guérande</em>
-                            <strong>18€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Baba au rhum revisité  </h3>
-                            <em>Avec son coulis de citron</em>
-                            <strong>22€</strong>
-                        </label>
-                    </div>
-                    <div class="cards">
-                        <label class="fricassee">
-                            <input type="checkbox" class="fricassee">
-                            <h3>Tarte au citron meringuée</h3>
-                            <em>Déstructurée</em>
-                            <strong>23€</strong>
-                        </label>
-                    </div>
+                     <label class="dessert">
+                       <div class="cards">
+                            <input type="checkbox" class="dessert">
+                            <div class="mets">
+                                <h3>Macaron noisette et chocolat</h3>
+                                <em>Glace au caramel brun et sel de Guérande</em>
+                            </div>
+                            <div class="prix">
+                                <b>18€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
+                    <label class="dessert">
+                        <div class="cards">
+                            <input type="checkbox" class="dessert">
+                            <div class="mets">
+                                <h3>Baba au rhum revisité</h3>
+                                <em>Avec son coulis de citron</em>
+                            </div>
+                            <div class="prix">               
+                                <b>22€</b> 
+                            </div>       
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
+                    <label class="dessert">
+                        <div class="cards">
+                            <input type="checkbox" class="dessert">
+                            <div class="mets">
+                                <h3>Tarte au citron meringuée</h3>
+                                <em>Déstructurée</em>
+                            </div>
+                            <div class="prix">
+                                <b>23€</b>
+                            </div>    
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </label>
                 </fieldset>
                 <button>Commander</button>
             </form>
-            </main>
+            </div>
+        </main>
             <footer>
+                <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="../index.html"><img src="../images/logo/ohmyfood@2x.svg" alt="le logo d'ohmyfood"></a></li>
+                        <li><a href="../index.html">ohmyfood</a></li>
                         <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
                         <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
                         <li><a href="#">Mentions légales</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            </footer>
+            </div>
+        </footer>
         </body>
-
     </html>
