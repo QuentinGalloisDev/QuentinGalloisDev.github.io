@@ -377,9 +377,10 @@ label {
 .fa-circle-check {
   background-color: #99E2D0;
   color: #ffffff;
-  width: 0px;
-  visibility: hidden;
+  opacity: 0;
   display: flex;
+  transition: all 2s;
+  width: 0px;
   border-radius: 0 10px 10px 0px;
   align-items: center;
   justify-content: space-around; }
@@ -397,19 +398,10 @@ label {
   100% {
     transform: translateX(-99px); } }
 .cards:hover .fa-circle-check {
-  visibility: visible;
-  animation: check 2s both;
-  transform-origin: right; }
+  opacity: 1;
+  width: 78px;
+  transform: translateX(2px); }
 
-@keyframes check {
-  0% {
-    width: 0px;
-    transform: translateX(0px) scale(1, 1);
-    opacity: 0; }
-  100% {
-    width: 78px;
-    transform: translateX(2px) scale(1, 1);
-    opacity: 1; } }
 .cards:hover .fa-circle-check::before {
   animation: tourne 1s both; }
 
@@ -520,24 +512,6 @@ footer li:nth-of-type(3) i {
     justify-content: space-between; }
 
   label {
-    width: 32%; }
-
-  fieldset:nth-of-type(2) label:first-of-type h3 {
-    white-space: nowrap; }
-
-  .cards:hover .fa-circle-check {
-    visibility: visible;
-    animation: check_2 2s both;
-    transform-origin: right; }
-
-  @keyframes check_2 {
-    0% {
-      width: 0px;
-      transform: translateX(0px) scale(1, 1);
-      opacity: 0; }
-    100% {
-      width: 15%;
-      transform: translateX(0px) scale(1, 1);
-      opacity: 1; } } }
+    width: 32%; } }
 
 /*# sourceMappingURL=style_2.css.map */
