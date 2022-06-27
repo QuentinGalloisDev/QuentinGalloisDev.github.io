@@ -28,12 +28,17 @@ ul {
   list-style-type: none;
   padding: 0; }
 
-/*Dégradé*/
+/* Héritage du Dégradé des bouttons*/
 #topbar button, button {
   background: #FF79DA;
   background: linear-gradient(180deg, #e972da 0%, #d16ada 60%, #a75cdb 100%); }
 
 /*Héritage pour les hover des bouttons commander et explorer nos restaurants*/
+button:hover {
+  background: #e163e9;
+  background: linear-gradient(180deg, #e163e9 0%, #bb3bc3 100%);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2); }
+
 /* Loading spinner*/
 .fa-spinner {
   position: absolute;
@@ -388,15 +393,6 @@ label {
 .fa-circle-check:before {
   font-size: 19px; }
 
-.cards:hover .prix b {
-  transform-origin: right;
-  animation: prix 650ms both; }
-
-@keyframes prix {
-  0% {
-    transform: translateX(0px); }
-  100% {
-    transform: translateX(-99px); } }
 .cards:hover .fa-circle-check {
   opacity: 1;
   width: 78px;
@@ -432,11 +428,6 @@ button {
   font-size: 20px;
   margin: 40px 0;
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2); }
-
-button:hover {
-  background: #e163e9;
-  background: linear-gradient(180deg, #e163e9 0%, #bb3bc3 100%);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2); }
 
 footer .container {
   background-color: #353535; }
@@ -511,7 +502,7 @@ footer li:nth-of-type(3) i {
     flex-wrap: wrap;
     justify-content: space-between; }
 
-  label {
+  .cards {
     width: 32%; } }
 
 /*# sourceMappingURL=style_2.css.map */
