@@ -265,6 +265,19 @@ footer li:nth-of-type(3) i {
   font-family: "shrikhand", sans-serif;
   margin-bottom: 25px; }
 
+.container_restos .material-icons:nth-of-type(1), .container_restos .material-icons:nth-of-type(2) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: fit-content;
+  font-size: 45px;
+  background-color: #f6f6f6;
+  border: none;
+  cursor: pointer; }
+
+.container_restos .material-icons:nth-of-type(1) {
+  z-index: 2; }
+
 .container_restos h1 span {
   font-weight: normal;
   font-size: 30px;
@@ -356,13 +369,13 @@ label {
   align-items: flex-end;
   justify-content: flex-end; }
 
-.entree .cards {
+.entree {
   animation: carte 2s 200ms both; }
 
-.plat .cards {
+.plats {
   animation: carte 2s 700ms both; }
 
-.dessert .cards {
+.dessert {
   animation: carte 2s 1300ms both; }
 
 @keyframes carte {
